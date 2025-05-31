@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/hero.css";
+import "../styles/Hero.css";
 import heroImg from "../assets/hero-img.png";
 import Calendar from "../assets/Calendar.svg";
 import Global from "../assets/Global.svg";

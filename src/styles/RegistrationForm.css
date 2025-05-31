@@ -1,0 +1,209 @@
+.register {
+  max-width: 100vw;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 128px;
+  gap: 38px;
+  flex-direction: column;
+  position: relative;
+}
+.register-ovaldesign {
+  position: absolute;
+  top: 0;
+  width: 380px;
+  height: 86px;
+  flex-shrink: 0;
+  border-radius: 380px;
+  background: rgba(153, 46, 157, 0.62);
+  filter: blur(94.44999694824219px);
+}
+.register-heading {
+  color: #333;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 93%;
+  letter-spacing: -0.8px;
+  padding-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.register-para {
+  color: #3b3b3e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 93%;
+  letter-spacing: -0.4px;
+  position: relative;
+  z-index: 2;
+}
+.register-main {
+  display: flex;
+  max-width: 428px;
+  width: 100%;
+  padding: 24px;
+  flex-direction: column;
+  gap: 14px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.17);
+  position: relative;
+  z-index: 2;
+}
+.register-main-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+  width: 100%;
+}
+.register-input-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+.register-input-label,
+.register-input-input {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+.register-input-label {
+  color: #333;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 93%;
+  letter-spacing: -0.3px;
+}
+.register-input-input {
+  display: flex;
+  height: 48px;
+  padding: 10px 20px;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  color: rgba(59, 59, 62, 1);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 93%;
+  letter-spacing: -0.28px;
+}
+.register-input-input::placeholder {
+  color: rgba(59, 59, 62, 0.58);
+}
+.register-next {
+  display: flex;
+  padding: 13px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #992e9d;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 93%;
+  letter-spacing: -0.3px;
+  width: fit-content;
+  margin-left: auto;
+  cursor: pointer;
+}
+.register-next.disabled,
+.register-next:disabled {
+  opacity: 0.8;
+  cursor: default;
+}
+.register-main-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.register-main-bottom button {
+  margin-left: 0;
+}
+.register-input-error {
+  font-size: 12px;
+  font-family: Poppins;
+  color: rgb(201, 46, 46);
+  padding-top: 3px;
+}
+.w-full {
+  width: 100%;
+}
+@media (width<1024px) {
+  .register {
+    padding: 64px;
+  }
+}
+@media (width<780px) {
+  .register {
+    padding: 64px 40px;
+    gap: 18px;
+  }
+  .register-main-inputs {
+    gap: 25px;
+  }
+  .register-input-div {
+    gap: 9px;
+  }
+  .register-input-label {
+    font-size: 16px;
+  }
+  .register-input-input {
+    font-size: 13px;
+  }
+  .register-heading {
+    font-size: 36px;
+  }
+  .register-para {
+    font-size: 17px;
+  }
+  .register-input-input {
+    height: 40px;
+  }
+  .register-ovaldesign {
+    width: 208px;
+    height: 47px;
+    flex-shrink: 0;
+  }
+}
+@media (width<580px) {
+  .register {
+    padding: 32px 25px;
+  }
+  .register-input-label {
+    font-size: 14px;
+  }
+  .register-input-input {
+    font-size: 12px;
+  }
+  .register-heading {
+    font-size: 28px;
+  }
+  .register-para {
+    font-size: 14px;
+  }
+  .register-main {
+    padding: 18px;
+  }
+  .register-input-input {
+    height: 36px;
+    padding: 10px;
+  }
+  .register-next {
+    font-size: 12px;
+    padding: 9px 24px 10px 24px;
+  }
+}
